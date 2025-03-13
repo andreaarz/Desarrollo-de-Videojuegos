@@ -1,9 +1,9 @@
 # Configuración inicial en Unity
-Crea un nuevo proyecto 2D en Unity.
-Crea un GameObject para el jugador (por ejemplo, un sprite simple de un cuadrado o un personaje).
-Crea una plataforma estática en el escenario para que el jugador pueda saltar sobre ella (puedes hacerlo con un cubo 2D).
-Agrega un Rigidbody2D y un Collider2D al jugador y a las plataformas.
-Asocia un Sprite Renderer al jugador para que tenga una apariencia visual.
+#    Crea un nuevo proyecto 2D en Unity.
+#    Crea un GameObject para el jugador (por ejemplo, un sprite simple de un cuadrado o un personaje).
+#    Crea una plataforma estática en el escenario para que el jugador pueda saltar sobre ella (puedes hacerlo con un cubo 2D).
+#    Agrega un Rigidbody2D y un Collider2D al jugador y a las plataformas.
+#    Asocia un Sprite Renderer al jugador para que tenga una apariencia visual.
 
 # Código en C#
 using UnityEngine;
@@ -54,8 +54,8 @@ public class PlayerController : MonoBehaviour
 }
 
 # Explicación del código:
-moveSpeed: Controla la velocidad a la que se mueve el jugador.
-jumpForce: Determina qué tan alto puede saltar el jugador.
-groundCheck: Un Transform vacío en la base del jugador que se utiliza para verificar si el jugador está tocando el suelo.
-groundLayer: Capa para identificar qué objetos se consideran suelo.
-isGrounded: Booleano que asegura que el jugador solo pueda saltar cuando esté tocando el suelo.
+#    moveSpeed: Controla la velocidad a la que se mueve el jugador.
+#    jumpForce: Determina qué tan alto puede saltar el jugador.
+#    groundCheck: Un Transform vacío en la base del jugador que se utiliza para verificar si el jugador está tocando el suelo.
+#    groundLayer: Capa para identificar qué objetos se consideran suelo.
+#    isGrounded: Booleano que asegura que el jugador solo pueda saltar cuando esté tocando el suelo.
