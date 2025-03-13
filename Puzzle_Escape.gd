@@ -1,5 +1,5 @@
 # Configuración inicial en Godot
-#     Crea un nuevo proyecto en Godot.
+#    Crea un nuevo proyecto en Godot.
 #    Crea un Scene para el jugador y los objetos interactivos (por ejemplo, bloques y botones).
 #    Agrega un Player como KinematicBody2D con una forma de colisión, y un sprite para el personaje.
 #    Agrega bloques o interruptores interactivos que el jugador pueda mover o activar para resolver los puzzles.
