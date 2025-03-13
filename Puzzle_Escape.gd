@@ -1,8 +1,8 @@
 # Configuración inicial en Godot
-Crea un nuevo proyecto en Godot.
-Crea un Scene para el jugador y los objetos interactivos (por ejemplo, bloques y botones).
-Agrega un Player como KinematicBody2D con una forma de colisión, y un sprite para el personaje.
-Agrega bloques o interruptores interactivos que el jugador pueda mover o activar para resolver los puzzles.
+#     Crea un nuevo proyecto en Godot.
+#    Crea un Scene para el jugador y los objetos interactivos (por ejemplo, bloques y botones).
+#    Agrega un Player como KinematicBody2D con una forma de colisión, y un sprite para el personaje.
+#    Agrega bloques o interruptores interactivos que el jugador pueda mover o activar para resolver los puzzles.
 
 #Código en GDScript
 #ayerController.gd
@@ -35,9 +35,10 @@ func _process(delta):
     velocity = move_and_slide(velocity, Vector2(0, 1))
 
 #Explicación:
-El jugador se mueve hacia la izquierda y derecha usando las teclas de flecha (o las teclas que se definan en el proyecto).
-El jugador puede saltar si está tocando el suelo.
-La función move_and_slide maneja el movimiento físico del jugador.
+
+#    El jugador se mueve hacia la izquierda y derecha usando las teclas de flecha (o las teclas que se definan en el proyecto).
+#    El jugador puede saltar si está tocando el suelo.
+#    La función move_and_slide maneja el movimiento físico del jugador.
 
 #PuzzleBlock.gd
 extends StaticBody2D
@@ -62,8 +63,9 @@ func move_to_position(new_position):
     target_position = new_position
 
 #Explicación:
-Este script permite que el bloque se mueva hacia una nueva posición cuando se llama a la función move_to_position().
-La función move_toward() hace que el bloque se desplace suavemente hacia su objetivo.
+
+#    Este script permite que el bloque se mueva hacia una nueva posición cuando se llama a la función move_to_position().
+#    La función move_toward() hace que el bloque se desplace suavemente hacia su objetivo.
 
 #Button.gd
 extends Area2D
@@ -83,12 +85,12 @@ func _on_button_pressed(body):
 
 #Explicación:
 
-El botón detecta cuando el jugador entra en su área de colisión (es decir, cuando el jugador está cerca del botón).
-Al presionar el botón, se mueve el bloque a una nueva posición.
-Nota: Asegúrate de agregar al jugador (Player) al grupo "player" para que la función _on_button_pressed funcione correctamente.
+#    El botón detecta cuando el jugador entra en su área de colisión (es decir, cuando el jugador está cerca del botón).
+#    Al presionar el botón, se mueve el bloque a una nueva posición.
+#    Nota: Asegúrate de agregar al jugador (Player) al grupo "player" para que la función _on_button_pressed funcione correctamente.
 
 #Escena de Godot
-Crear la Escena: Añade un KinematicBody2D para el jugador con su sprite y colisión.
-Crear el Bloque: Añade un StaticBody2D para el bloque con un sprite y colisión.
-Crear el Botón: Añade un Area2D para el botón con una colisión y el script correspondiente.
-Configurar la Cámara: Agrega una cámara a la escena para seguir al jugador si es necesario.
+#    Crear la Escena: Añade un KinematicBody2D para el jugador con su sprite y colisión.
+#    Crear el Bloque: Añade un StaticBody2D para el bloque con un sprite y colisión.
+#    Crear el Botón: Añade un Area2D para el botón con una colisión y el script correspondiente.
+#    Configurar la Cámara: Agrega una cámara a la escena para seguir al jugador si es necesario.
